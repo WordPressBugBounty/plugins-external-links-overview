@@ -1,0 +1,665 @@
+# Copyright (C) 2025 www.seo-kreativ.de | Christian Ott
+# This file is distributed under the same license as the External Links Overview package.
+msgid ""
+msgstr ""
+"Project-Id-Version: External Links Overview 2.0.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/external-links-overview\n"
+"POT-Creation-Date: 2025-08-18 14:16+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Generator: Gemini\n"
+"X-Domain: external-links-overview\n"
+
+#: admin/views/external-links-table.php:26
+msgid "No external links found. Please run \"Collect All External Links\" first."
+msgstr ""
+
+#: admin/views/external-links-table.php:28
+msgid "No external links found for your current search criteria."
+msgstr ""
+
+#: admin/views/external-links-table.php:40
+#: admin/views/external-links-table.php:164
+#: admin/views/external-links-table.php:306
+msgid "ID"
+msgstr ""
+
+#: admin/views/external-links-table.php:45
+#: admin/views/external-links-table.php:172
+#: admin/views/external-links-table.php:307
+msgid "Source"
+msgstr ""
+
+#: admin/views/external-links-table.php:50
+#: admin/views/external-links-table.php:189
+#: admin/views/external-links-table.php:308
+msgid "Anchor Text"
+msgstr ""
+
+#: admin/views/external-links-table.php:55
+#: admin/views/external-links-table.php:192
+#: admin/views/external-links-table.php:309
+msgid "Target URL"
+msgstr ""
+
+#: admin/views/external-links-table.php:60
+#: admin/views/external-links-table.php:209
+#: admin/views/external-links-table.php:310
+msgid "Link Attributes"
+msgstr ""
+
+#: admin/views/external-links-table.php:65
+#: admin/views/external-links-table.php:218
+#: admin/views/external-links-table.php:311
+msgid "Status"
+msgstr ""
+
+#: admin/views/external-links-table.php:71
+#: admin/views/external-links-table.php:231
+#: admin/views/external-links-table.php:312
+msgid "Link type"
+msgstr ""
+
+#: admin/views/external-links-table.php:76
+#: admin/views/external-links-table.php:241
+#: admin/views/external-links-table.php:313
+msgid "Link duration"
+msgstr ""
+
+#: admin/views/external-links-table.php:81
+#: admin/views/external-links-table.php:264
+#: admin/views/external-links-table.php:314
+msgid "Outreach Details"
+msgstr ""
+
+#: admin/views/external-links-table.php:86
+#: admin/views/external-links-table.php:291
+#: admin/views/external-links-table.php:315
+msgid "Actions"
+msgstr ""
+
+#: admin/views/external-links-table.php:100
+msgid "Not Checked"
+msgstr ""
+
+#: admin/views/external-links-table.php:111
+msgid "Broken"
+msgstr ""
+
+#: admin/views/external-links-table.php:115
+msgid "OK"
+msgstr ""
+
+#: admin/views/external-links-table.php:152
+msgid "Untitled"
+msgstr ""
+
+#: admin/views/external-links-table.php:155
+msgid "[No Anchor Text]"
+msgstr ""
+
+#: admin/views/external-links-table.php:173
+#: admin/views/external-links-table.php:295
+msgid "Edit Source Post/Page"
+msgstr ""
+
+#: admin/views/external-links-table.php:184
+msgid "Deleted or Draft"
+msgstr ""
+
+#: admin/views/external-links-table.php:226
+msgid "Last Checked"
+msgstr ""
+
+#: admin/views/external-links-table.php:227
+msgid "%s ago"
+msgstr ""
+
+#: admin/views/external-links-table.php:229
+msgid "Invalid date stored"
+msgstr ""
+
+#: admin/views/external-links-table.php:236
+msgid "None"
+msgstr ""
+
+#: admin/views/external-links-table.php:252
+msgid "This link has expired!"
+msgstr ""
+
+#: admin/views/external-links-table.php:258
+msgid "Placed on:"
+msgstr ""
+
+#: admin/views/external-links-table.php:262
+msgid "Expires on:"
+msgstr ""
+
+#: admin/views/external-links-table.php:268
+#: admin/views/external-links-table.php:285
+msgid "Name"
+msgstr ""
+
+#: admin/views/external-links-table.php:269
+msgid "Mail:"
+msgstr ""
+
+#: admin/views/external-links-table.php:270
+#: admin/views/external-links-table.php:287
+msgid "Price"
+msgstr ""
+
+#: admin/views/external-links-table.php:271
+#: admin/views/external-links-table.php:288
+msgid "Note"
+msgstr ""
+
+#: admin/views/external-links-table.php:286
+msgid "E-Mail"
+msgstr ""
+
+#: admin/views/external-links-table.php:294
+msgid "Edit"
+msgstr ""
+
+#: admin/views/external-links-table.php:298
+msgid "Edit the source post/page"
+msgstr ""
+
+#: admin/views/external-links-table.php:300
+msgid "Edit Source"
+msgstr ""
+
+#: admin/views/external-links-table.php:304
+msgid "Save"
+msgstr ""
+
+#: admin/views/external-links-table.php:308
+msgid "Cancel"
+msgstr ""
+
+#: admin/views/external-links-page.php:35
+#: admin/class-admin.php:100
+msgid "External Links Overview"
+msgstr ""
+
+#: admin/views/external-links-page.php:61
+msgid "Collect All External Links"
+msgstr ""
+
+#: admin/views/external-links-page.php:65
+msgid "Update Links from Changed Posts"
+msgstr ""
+
+#: admin/views/external-links-page.php:73
+msgid "Check External Links Status"
+msgstr ""
+
+#: admin/views/external-links-page.php:79
+msgid "Are you sure you want to delete ALL external link data? This cannot be undone!"
+msgstr ""
+
+#: admin/views/external-links-page.php:81
+msgid "Delete All External Link Data"
+msgstr ""
+
+#: admin/views/external-links-page.php:85
+msgid "Export to CSV"
+msgstr ""
+
+#: admin/views/external-links-page.php:91
+#: admin/class-admin.php:156
+msgid "Processing..."
+msgstr ""
+
+#: admin/views/external-links-page.php:93
+#: admin/class-admin.php:164
+msgid "Starting..."
+msgstr ""
+
+#: admin/views/external-links-page.php:100
+msgid "Cancel"
+msgstr ""
+
+#: admin/views/external-links-page.php:108
+msgid "Link Table"
+msgstr ""
+
+#: admin/views/external-links-page.php:109
+msgid "Domain Distribution"
+msgstr ""
+
+#: admin/views/external-links-page.php:110
+msgid "Settings"
+msgstr ""
+
+#: admin/views/external-links-page.php:126
+msgid "Search Links:"
+msgstr ""
+
+#: admin/views/external-links-page.php:127
+msgid "Search by URL, anchor text, etc..."
+msgstr ""
+
+#: admin/views/external-links-page.php:128
+msgid "Search"
+msgstr ""
+
+#: admin/views/external-links-page.php:130
+msgid "Clear Search"
+msgstr ""
+
+#: admin/views/external-links-page.php:137
+msgid "Show only broken links"
+msgstr ""
+
+#: admin/views/external-links-page.php:143
+msgid "Hide Go-Links"
+msgstr ""
+
+#: admin/views/external-links-page.php:147
+msgid "Show only Go-Links"
+msgstr ""
+
+#: admin/views/external-links-page.php:153
+msgid "Only expired links"
+msgstr ""
+
+#: admin/views/external-links-page.php:155
+msgid "Apply"
+msgstr ""
+
+#: admin/views/external-links-page.php:189
+msgid "General Settings"
+msgstr ""
+
+#: admin/views/external-links-page.php:192
+msgid "Linkbuilding Features"
+msgstr ""
+
+#: admin/views/external-links-page.php:196
+msgid "Enable additional columns (Link type, Link duration, Outreach Details) and the \"Only expired links\" filter."
+msgstr ""
+
+#: admin/views/external-links-page.php:201
+msgid "Affiliate (Go-Links) Features"
+msgstr ""
+
+#: admin/views/external-links-page.php:205
+msgid "Enable Go-Links detection, filtering, and management."
+msgstr ""
+
+#: admin/views/external-links-page.php:213
+msgid "Affiliate (Go-Links) Management"
+msgstr ""
+
+#: admin/views/external-links-page.php:216
+msgid "Go-Link Patterns"
+msgstr ""
+
+#: admin/views/external-links-page.php:221
+msgid "Enter URL patterns to identify Go-Links, one per line. Use wildcards (*) to match any characters. Examples:"
+msgstr ""
+
+#: admin/views/external-links-page.php:229
+msgid "After changing patterns, you must run \"Collect All External Links\" again for the changes to apply to existing link data."
+msgstr ""
+
+#: admin/views/external-links-page.php:232
+msgid "Save Settings"
+msgstr ""
+
+#: admin/views/domain-metrics.php:12
+msgid "No domain metrics found. Please run \"Collect All External Links\" first."
+msgstr ""
+
+#: admin/views/domain-metrics.php:18
+#: admin/views/domain-metrics.php:59
+#: admin/views/domain-metrics.php:80
+msgid "Domain"
+msgstr ""
+
+#: admin/views/domain-metrics.php:19
+#: admin/views/domain-metrics.php:62
+#: admin/views/domain-metrics.php:81
+msgid "Links"
+msgstr ""
+
+#: admin/views/domain-metrics.php:20
+#: admin/views/domain-metrics.php:65
+#: admin/views/domain-metrics.php:82
+msgid "Source Posts"
+msgstr ""
+
+#: admin/views/domain-metrics.php:21
+#: admin/views/domain-metrics.php:68
+#: admin/views/domain-metrics.php:83
+msgid "Distribution"
+msgstr ""
+
+#: admin/views/domain-metrics.php:54
+msgid "View All Links"
+msgstr ""
+
+#: admin/views/domain-metrics.php:58
+msgid "Unknown Domain"
+msgstr ""
+
+#: admin/views/domain-metrics.php:68
+msgid "%s Links"
+msgstr ""
+
+#: admin/class-ajax-handler.php:64
+#: admin/class-ajax-handler.php:115
+#: admin/class-ajax-handler.php:164
+#: admin/class-ajax-handler.php:215
+#: admin/class-ajax-handler.php:280
+#: admin/class-ajax-handler.php:306
+#: admin/class-admin.php:78
+msgid "Permission denied."
+msgstr ""
+
+#: admin/class-ajax-handler.php:101
+msgid "Processing external links..."
+msgstr ""
+
+#: admin/class-ajax-handler.php:102
+msgid "External link processing complete!"
+msgstr ""
+
+#: admin/class-ajax-handler.php:143
+msgid "Checking link status..."
+msgstr ""
+
+#: admin/class-ajax-handler.php:144
+msgid "Link status check complete!"
+msgstr ""
+
+#: admin/class-ajax-handler.php:220
+msgid "Invalid Link ID."
+msgstr ""
+
+#: admin/class-ajax-handler.php:236
+#: admin/class-admin.php:160
+msgid "Link status successfully marked as OK."
+msgstr ""
+
+#: admin/class-ajax-handler.php:243
+#: admin/class-admin.php:161
+msgid "Could not update link status in the database."
+msgstr ""
+
+#: admin/class-ajax-handler.php:288
+msgid "Could not retrieve domain data."
+msgstr ""
+
+#: admin/class-ajax-handler.php:311
+msgid "No data to update."
+msgstr ""
+
+#: admin/class-ajax-handler.php:351
+#: admin/class-ajax-handler.php:376
+msgid "This link has expired!"
+msgstr ""
+
+#: admin/class-admin.php:79
+msgid "Settings saved."
+msgstr ""
+
+#: admin/class-admin.php:101
+msgid "External Links"
+msgstr ""
+
+#: admin/class-admin.php:157
+msgid "Complete!"
+msgstr ""
+
+#: admin/class-admin.php:158
+msgid "An error occurred during processing. Please check the browser console or server logs for details."
+msgstr ""
+
+#: admin/class-admin.php:159
+msgid "Are you sure you want to delete ALL external link data? This cannot be undone!"
+msgstr ""
+
+#: admin/class-admin.php:162
+msgid "A network error occurred (e.g., timeout or connection issue). Please check your connection and try again."
+msgstr ""
+
+#: admin/class-admin.php:163
+msgid "Are you sure you want to cancel the current process?"
+msgstr ""
+
+#: admin/class-admin.php:165
+msgid "Collecting all external links"
+msgstr ""
+
+#: admin/class-admin.php:166
+msgid "Updating links from changed posts"
+msgstr ""
+
+#: admin/class-admin.php:167
+msgid "Checking external link status"
+msgstr ""
+
+#: admin/class-admin.php:169
+msgid "Posts Processed:"
+msgstr ""
+
+#: admin/class-admin.php:170
+msgid "Links Found:"
+msgstr ""
+
+#: admin/class-admin.php:171
+msgid "Links Checked:"
+msgstr ""
+
+#: admin/class-admin.php:172
+msgid "Broken Found:"
+msgstr ""
+
+#: admin/class-admin.php:173
+msgid "Est. time remaining:"
+msgstr ""
+
+#: admin/class-admin.php:174
+msgid "Calculating..."
+msgstr ""
+
+#: admin/class-admin.php:175
+msgctxt "time unit seconds short"
+msgid "sec"
+msgstr ""
+
+#: admin/class-admin.php:176
+msgctxt "time unit minutes short"
+msgid "min"
+msgstr ""
+
+#: admin/class-admin.php:177
+msgctxt "time unit hours short"
+msgid "hr"
+msgstr ""
+
+#: admin/class-admin.php:178
+msgid "Reload Page"
+msgstr ""
+
+#: admin/class-admin.php:179
+msgid "Process (%s) was cancelled."
+msgstr ""
+
+#: admin/class-admin.php:180
+msgid "Please wait for the current process (%s) to finish before starting another."
+msgstr ""
+
+#: admin/class-admin.php:181
+msgid "Mark as OK"
+msgstr ""
+
+#: admin/class-admin.php:182
+msgid "OK"
+msgstr ""
+
+#: admin/class-admin.php:183
+msgid "Broken"
+msgstr ""
+
+#: admin/class-admin.php:184
+msgid "Last Checked"
+msgstr ""
+
+#: admin/class-admin.php:185
+msgid "Just now"
+msgstr ""
+
+#: admin/class-admin.php:218
+#: admin/class-admin.php:220
+msgid "Items per page:"
+msgstr ""
+
+#: admin/class-admin.php:224
+msgid "All"
+msgstr ""
+
+#: admin/class-admin.php:336
+msgid "%s link"
+msgid_plural "%s links"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-admin.php:338
+msgid "%s domain"
+msgid_plural "%s domains"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-admin.php:346
+msgid "&laquo; Previous"
+msgstr ""
+
+#: admin/class-admin.php:347
+msgid "Next &raquo;"
+msgstr ""
+
+#: admin/class-admin.php:358
+msgid "Page %1$s of %2$s"
+msgstr ""
+
+#: admin/class-admin.php:385
+msgid "All external link data has been deleted."
+msgstr ""
+
+#: admin/class-admin.php:391
+msgid "Data last collected/updated: %s"
+msgstr ""
+
+#: admin/class-admin.php:393
+msgid "Link data has not been collected yet."
+msgstr ""
+
+#: admin/class-admin.php:398
+msgid "Links last checked: %s"
+msgstr ""
+
+#: admin/class-admin.php:400
+msgid "Links have not been checked yet."
+msgstr ""
+
+#: admin/class-admin.php:406
+msgid "<span class=\"seokelo-pending-updates\">%d post update waiting.</span>"
+msgid_plural "<span class=\"seokelo-pending-updates\">%d post updates waiting.</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: admin/class-admin.php:441
+#: admin/class-admin.php:444
+msgid "Ext. Links"
+msgstr ""
+
+#: admin/class-admin.php:477
+msgid "View external links from this post"
+msgstr ""
+
+#: includes/class-external-links-overview.php:82
+msgid "Permission Error"
+msgstr ""
+
+#: includes/class-external-links-overview.php:91
+msgid "Security check failed."
+msgstr ""
+
+#: includes/class-external-links-overview.php:171
+msgid "Security check failed for CSV export."
+msgstr ""
+
+#: includes/class-external-links-overview.php:172
+msgid "Nonce Error"
+msgstr ""
+
+#: includes/class-external-links-overview.php:184
+msgid "Database error fetching links for export."
+msgstr ""
+
+#: includes/class-external-links-overview.php:193
+msgid "Could not open output stream for CSV export."
+msgstr ""
+
+#: includes/class-external-links-overview.php:251
+#: includes/class-external-links-overview.php:302
+msgid "External Links Overview: Status"
+msgstr ""
+
+#: includes/class-external-links-overview.php:258
+msgid "Error: Database handler not available."
+msgstr ""
+
+#: includes/class-external-links-overview.php:269
+msgid "Could not retrieve link data. Please check database table."
+msgstr ""
+
+#: includes/class-external-links-overview.php:278
+msgid "No external links found in the database yet."
+msgstr ""
+
+#: includes/class-external-links-overview.php:279
+msgid "Collect Links"
+msgstr ""
+
+#: includes/class-external-links-overview.php:285
+msgid "Found %s broken external links."
+msgstr ""
+
+#: includes/class-external-links-overview.php:289
+msgid "out of %s total links"
+msgstr ""
+
+#: includes/class-external-links-overview.php:294
+msgid "Last checked: %s"
+msgstr ""
+
+#: includes/class-external-links-overview.php:298
+msgid "Links have not been checked yet."
+msgstr ""
+
+#: includes/class-external-links-overview.php:301
+msgid "View Broken Links"
+msgstr ""
+
+#: includes/class-external-links-overview.php:302
+msgid "Go to Overview"
+msgstr ""
+
+#: includes/class-link-processor.php:316
+msgid "Image Link"
+msgstr ""
+
+#: includes/class-link-processor.php:318
+msgid "[Empty Anchor]"
+msgstr ""

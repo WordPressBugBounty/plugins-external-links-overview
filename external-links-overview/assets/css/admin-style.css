@@ -1,0 +1,701 @@
+/* Admin Styles for External Links Overview - VERSION 1.2.1 (Prefixed) */
+
+/* Base Styles */
+.seokelo-wrap .notice:not(.seokelo-ajax-notice):not(.seokelo-status-bar) { /* Prefixed */
+    margin-bottom: 15px;
+}
+
+/* Status Bar */
+.seokelo-status-bar { /* Prefixed */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+    font-size: 13px;
+    margin-bottom: 1.5em !important;
+    border-left-width: 4px;
+    padding: 10px 12px !important;
+}
+.seokelo-status-item { /* Prefixed */
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #50575e;
+}
+.seokelo-status-item .dashicons { /* Prefixed */
+    color: #7f7f7f;
+    font-size: 18px;
+    height: 18px;
+    width: 18px;
+}
+.seokelo-pending-updates { /* Prefixed */
+    color: #D94F00;
+    font-weight: bold;
+}
+
+/* Progress Bar Box */
+.seokelo-progress-box { /* Prefixed */
+    display: none;
+    margin: 1.5em 0;
+    padding: 15px;
+    background: #fff;
+    border: 1px solid #ccd0d4;
+    box-shadow: 0 1px 1px rgba(0,0,0,.04);
+    border-radius: 4px;
+}
+.seokelo-progress-box h3 { /* Prefixed */
+    margin: 0 0 10px 0;
+    font-size: 1.2em;
+    color: #1d2327;
+}
+.seokelo-progress-stats { /* Prefixed */
+    margin-bottom: 10px;
+    font-size: 13px;
+    color: #50575e;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.seokelo-estimate { /* Prefixed */
+    font-style: italic;
+    color: #787c82;
+}
+.seokelo-progress-bar-wrapper { /* Prefixed */
+    background-color: #e0e0e0;
+    border-radius: 4px;
+    height: 20px;
+    overflow: hidden;
+    margin-bottom: 10px;
+    position: relative;
+}
+.seokelo-progress-bar { /* Prefixed */
+    background-color: #0073aa;
+    height: 100%;
+    width: 0%;
+    transition: width 0.3s ease-in-out;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+.seokelo-progress-bar::after { /* Prefixed */
+    content: attr(data-progress) '%';
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: white;
+    font-size: 11px;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+.seokelo-progress-controls { /* Prefixed */
+    margin-top: 10px;
+    text-align: right;
+}
+#seokelo-cancel-process .dashicons { /* Prefixed ID */
+    margin-right: 3px;
+    vertical-align: text-bottom;
+}
+
+
+/* AJAX Notifications */
+.seokelo-ajax-notice { /* Prefixed */
+    border-left-width: 4px;
+    margin-top: 15px;
+    display: none;
+}
+.seokelo-ajax-notice.notice-success { border-left-color: #46b450; } /* Prefixed */
+.seokelo-ajax-notice.notice-error { border-left-color: #dc3232; } /* Prefixed */
+.seokelo-ajax-notice.notice-warning { border-left-color: #ffb900; } /* Prefixed */
+.seokelo-ajax-notice.notice-info { border-left-color: #00a0d2; } /* Prefixed */
+.seokelo-ajax-notice p a.seokelo-reload-link { /* Prefixed */
+    text-decoration: none;
+    border-bottom: 1px dotted;
+    margin-left: 10px;
+}
+
+
+/* Controls Container styling (where buttons are) */
+.seokelo-controls-container { /* Prefixed */
+    margin: 1.5em 0;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+}
+.seokelo-controls-container .button .dashicons { /* Prefixed */
+    margin-right: 3px;
+    vertical-align: text-bottom;
+}
+.seokelo-controls-container .seokelo-delete-button { /* Prefixed */
+    color: #dc3232;
+    border-color: #dc3232;
+}
+.seokelo-controls-container .seokelo-delete-button:hover, /* Prefixed */
+.seokelo-controls-container .seokelo-delete-button:focus { /* Prefixed */
+    background-color: #dc3232;
+    color: #fff;
+    border-color: #dc3232;
+}
+
+/* Tabs */
+.seokelo-tabs { margin-top: 1.5em; margin-bottom: 0; border-bottom: 1px solid #ccc; } /* Prefixed */
+.seokelo-tab-content { /* Prefixed */
+    margin-top: 1px;
+    padding: 1em 0 0 0;
+}
+
+/* == Top Nav Controls Styling == */
+/* Prefixed relevant selectors */
+.seokelo-wrap #seokelo-tab-links .tablenav.top {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 15px;
+    padding: 8px 10px;
+    height: auto;
+    border-bottom: 1px solid #e5e5e5;
+    overflow-x: auto;
+    overflow-y: hidden;
+}
+.seokelo-wrap .tablenav.top > form,
+.seokelo-wrap .tablenav.top > .bulkactions {
+    margin: 0;
+    float: none;
+    flex-shrink: 0;
+}
+.seokelo-wrap .tablenav.top > form {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    gap: 15px;
+    flex-grow: 1;
+    flex-shrink: 1;
+}
+ .seokelo-wrap .tablenav.top .search-box {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    flex-shrink: 1;
+}
+ .seokelo-wrap .tablenav.top .search-box input[type="search"]{
+     flex-shrink: 1;
+ }
+.seokelo-wrap .tablenav.top .alignleft.actions {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    margin: 0;
+    white-space: nowrap;
+    flex-shrink: 0;
+    margin-left: auto;
+    order: 2;
+}
+.seokelo-wrap .tablenav.top .alignleft.actions label {
+    display: inline-flex;
+    align-items: center;
+    gap: 4px;
+    cursor: pointer;
+    margin: 0;
+}
+.seokelo-wrap .tablenav.top .clear {
+    display: none;
+}
+/* == End Top Nav Controls Styling == */
+
+
+/* Link Count Summary above table */
+.seokelo-link-summary { /* Prefixed */
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    padding: 8px 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    font-size: 13px;
+    color: #333;
+}
+.seokelo-link-summary strong { /* Prefixed */
+    font-weight: 600;
+}
+
+/* Table Styles */
+.seokelo-links-table {
+    margin-top: 0;
+    table-layout: fixed; /* Important for column widths */
+    width: 100%;
+}
+.seokelo-links-table th.sortable a,
+.seokelo-links-table th.sorted a {
+    display: block;
+    position: relative;
+    padding-right: 15px;
+}
+.seokelo-links-table th.sortable a:hover span,
+.seokelo-links-table th.sorted a span {
+    color: #2271b1;
+}
+.seokelo-links-table th .sorting-indicator {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 16px;
+    line-height: 1;
+    height: 16px;
+    width: 16px;
+}
+.seokelo-links-table th.sorted .sorting-indicator {
+    color: #2271b1;
+}
+.seokelo-links-table td, .seokelo-links-table th {
+    vertical-align: middle;
+    word-break: break-word;
+}
+
+/* === NEW/UPDATED: Column Widths for Links Table === */
+.seokelo-links-table .column-id { width: 4%; }
+.seokelo-links-table .column-quelle { width: 13%; }
+.seokelo-links-table .column-ankertext { width: 13%; }
+.seokelo-links-table .column-url { width: 15%; }
+.seokelo-links-table .column-link-attributes { width: 8%; }
+.seokelo-links-table .column-status { width: 8%; }
+.seokelo-links-table .column-link-type { width: 8%; }
+.seokelo-links-table .column-link-duration { width: 9%; }
+.seokelo-links-table .column-outreach-details { width: 12%; }
+.seokelo-links-table .column-actions { width: 6%; }
+
+/* Styling for inline edit fields */
+.seokelo-links-table .column-outreach-details input,
+.seokelo-links-table .column-outreach-details textarea { 
+    width: 100%; 
+    box-sizing: border-box; 
+    margin-bottom: 3px; 
+}
+
+
+.seokelo-links-table .column-url a { display: inline-flex; max-width: 98%; align-items: center; gap: 3px;}
+.seokelo-links-table .column-url a span.dashicons { font-size: 10px; vertical-align: baseline; margin-left: 2px;}
+.seokelo-links-table .column-url a span.dashicons-external { color: #888; }
+.seokelo-links-table .column-quelle a { font-weight: 500; }
+
+/* === NEW/UPDATED: Button Styles in Actions Column === */
+.seokelo-links-table .column-actions .seokelo-actions-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+    align-items: center;
+}
+.seokelo-links-table .column-actions .button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px; /* Space between icon and text */
+    box-sizing: border-box;
+    margin: 0 !important; /* Override WP core margins */
+}
+.seokelo-links-table .column-actions .button .dashicons {
+    font-size: 16px;
+    height: 16px;
+    width: 16px;
+}
+/* == End Button Styles == */
+
+/* Status Styles */
+.seokelo-broken-link { background-color: #fff0f0 !important; }
+.seokelo-broken-link td { border-bottom-color: #ffcccc; }
+.seokelo-ignored-link { background-color: #f9f9f9 !important; }
+/* Allgemeine Regel für alle Status-Badges */
+.seokelo-status-cell span[class^="seokelo-status-"] {
+    display: inline-flex; align-items: center; gap: 3px; padding: 3px 6px; border-radius: 3px;
+    font-size: 11px; font-weight: 600; text-transform: uppercase;
+    line-height: 1.2;
+}
+/* Spezifische Regeln für jeden Status */
+.seokelo-status-broken { background-color: #dc3232; color: white; }
+.seokelo-status-ok { background-color: #46b450; color: white; }
+.seokelo-status-ignored { background-color: #e0e0e0; color: #50575e; }
+.seokelo-status-unknown { background-color: #f0f0f1; color: #1d2327; }
+
+.seokelo-status-cell .dashicons { font-size: 14px; line-height: 1; height: 14px; width: 14px; vertical-align: text-bottom; }
+.seokelo-check-time { font-size: 11px; color: #777; margin-top: 3px; }
+
+/* === NEW: Go-Link Styles === */
+.seokelo-go-link-row td {
+    background-color: #f0f8ff; /* A light blue background */
+}
+.seokelo-go-link-tag {
+    display: inline-block;
+    background-color: #0073aa;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 600;
+    padding: 2px 5px;
+    border-radius: 3px;
+    margin-left: 8px;
+    text-transform: uppercase;
+}
+.seokelo-original-status {
+    font-size: 0.9em;
+    color: #787c82;
+    margin-top: 3px;
+    padding-left: 17px;
+}
+/* === END: Go-Link Styles === */
+
+
+/* === UPDATED: Domain Distribution Horizontal Bar Chart Styles === */
+#seokelo-tab-domain-distribution .tablenav { display: none; }
+
+.seokelo-domain-controls {
+    margin-bottom: 1em;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+    padding: 8px;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 4px;
+}
+.seokelo-domain-view-selector, .seokelo-domain-filter-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+.seokelo-domain-filter-selector label {
+    cursor: pointer;
+}
+.seokelo-domain-controls button.active {
+    background-color: #0073aa;
+    color: #fff;
+    border-color: #0073aa;
+}
+
+.seokelo-domain-kpis {
+    padding: 10px 15px;
+    background-color: #fff;
+    border: 1px solid #e5e5e5;
+    border-bottom: none;
+    border-radius: 4px 4px 0 0;
+    margin-top: 1em;
+    display: flex;
+    gap: 20px;
+    font-size: 14px;
+}
+.seokelo-kpi-info {
+    margin-left: auto;
+    font-style: italic;
+    color: #787c82;
+}
+
+.seokelo-barchart-wrapper {
+    background: #fff;
+    border: 1px solid #e5e5e5;
+    padding: 10px;
+    border-radius: 0 0 4px 4px;
+}
+
+.seokelo-bar-item {
+    display: grid;
+    grid-template-columns: 25% 1fr 100px; /* Label | Bar | Value */
+    gap: 15px;
+    align-items: center;
+    padding: 8px;
+    border-bottom: 1px solid #f0f0f0;
+    text-decoration: none;
+    color: #2c3338;
+    transition: background-color 0.2s;
+}
+.seokelo-bar-item:last-child {
+    border-bottom: none;
+}
+.seokelo-bar-item:hover {
+    background-color: #f0f5fa;
+}
+
+.seokelo-bar-label {
+    font-weight: 500;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.seokelo-bar-bg {
+    background-color: #e0e0e0;
+    border-radius: 3px;
+    height: 18px;
+    overflow: hidden;
+}
+
+.seokelo-bar-fg {
+    background-color: #0073aa;
+    height: 100%;
+    border-radius: 3px;
+    transition: width 0.5s ease-out;
+}
+
+.seokelo-bar-value {
+    text-align: right;
+    font-size: 13px;
+    color: #50575e;
+}
+.seokelo-bar-value .count {
+    font-weight: bold;
+}
+.seokelo-bar-value .percent {
+    font-size: 11px;
+    color: #787c82;
+    margin-left: 5px;
+}
+/* == End Domain View Styles == */
+
+
+/* Row Actions */
+tr:hover .row-actions { visibility: visible; opacity: 1; }
+.row-actions { visibility: hidden; opacity: 0; transition: opacity 0.1s ease-in-out; padding-top: 2px;}
+
+/* Loading state for AJAX Button */
+.seokelo-ajax-button:disabled,
+#seokelo-delete-form button:disabled {
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+/* Loading state for manual status reset */
+.seokelo-reset-link-status.updating-message::after {
+    content: '...';
+    display: inline-block;
+    vertical-align: bottom;
+}
+.seokelo-links-table tr.seokelo-loading td {
+    opacity: 0.6;
+    position: relative;
+    pointer-events: none;
+}
+.seokelo-links-table tr.seokelo-loading td::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    margin-left: -8px;
+    border: 2px solid rgba(0, 115, 170, 0.3);
+    border-top-color: #0073aa;
+    border-radius: 50%;
+    animation: seokelo-spin 0.8s linear infinite;
+    box-sizing: border-box;
+    z-index: 10;
+}
+@keyframes seokelo-spin {
+    to { transform: rotate(360deg); }
+}
+
+/* == Bottom Nav / Pagination Styling == */
+.tablenav.bottom {
+    border-top: 1px solid #e5e5e5;
+    height: auto;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.tablenav.bottom .seokelo-per-page-selector {
+    float: none;
+    margin: 0;
+    order: 1;
+}
+.seokelo-pagination {
+    float: none;
+    margin: 0;
+    order: 2;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.seokelo-pagination ul { margin: 0; padding: 0; display: inline-flex; vertical-align: middle; list-style: none; gap: 3px;}
+.seokelo-pagination li { display: inline-block; margin: 0;}
+.seokelo-pagination .displaying-num,
+.seokelo-pagination .displaying-pages {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 5px 10px;
+    vertical-align: middle;
+    color: #555;
+    border: 1px solid #e5e5e5;
+    background: #f7f7f7;
+    line-height: normal;
+    height: 30px;
+    box-sizing: border-box;
+    border-radius: 3px;
+}
+.seokelo-pagination a,
+.seokelo-pagination span.current {
+    display: inline-block;
+    min-width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    padding: 0 10px;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #ccc;
+    background-color: #f7f7f7;
+    color: #0073aa;
+    line-height: 28px;
+    border-radius: 3px;
+    vertical-align: middle;
+}
+.seokelo-pagination a:hover {
+    background-color: #f0f0f0;
+    border-color: #999;
+    color: #2271b1;
+}
+.seokelo-pagination span.current {
+    background-color: #0073aa;
+    border-color: #0073aa;
+    color: #fff;
+    font-weight: bold;
+    cursor: default;
+}
+.seokelo-pagination .prev,
+.seokelo-pagination .next {
+}
+.seokelo-pagination .dots {
+    border: none;
+    background: none;
+    padding: 5px 3px;
+    line-height: 28px;
+    color: #555;
+    cursor: default;
+}
+.tablenav.bottom .clear { display: none; }
+
+/* == End Bottom Nav / Pagination Styling == */
+
+
+/* Responsive */
+@media screen and (max-width: 782px) {
+    /* Responsive stacking for Link Table */
+    .seokelo-links-table thead {
+        display: none;
+    }
+    .seokelo-links-table tr {
+        display: block;
+        margin-bottom: .625em;
+        border: 1px solid #e5e5e5;
+    }
+    .seokelo-links-table td {
+        display: block;
+        text-align: right;
+        border-bottom: 1px dotted #e5e5e5;
+    }
+    .seokelo-links-table td:before {
+        content: attr(data-colname);
+        float: left;
+        font-weight: 700;
+        text-align: left;
+    }
+    .seokelo-links-table td:last-child {
+        border-bottom: 0;
+    }
+    .seokelo-links-table .column-actions .seokelo-actions-wrapper {
+        width: 50%;
+        float: right;
+    }
+    /* End responsive stacking */
+
+    .seokelo-wrap #seokelo-tab-links .tablenav.top {
+        flex-direction: column;
+        align-items: stretch;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+    .seokelo-wrap .tablenav.top > form {
+         flex-direction: column;
+         align-items: stretch;
+         gap: 10px;
+         width: 100%;
+         order: 1;
+    }
+    .seokelo-wrap .tablenav.top .search-box {
+        order: 1;
+        min-width: 0;
+    }
+     .seokelo-wrap .tablenav.top .search-box input[type="search"]{
+         min-width: 100px;
+         width: 100%;
+     }
+    .seokelo-wrap .tablenav.top .alignleft.actions {
+        order: 2;
+        justify-content: flex-start;
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 8px;
+        width: 100%;
+    }
+     .seokelo-wrap .tablenav.top .alignleft.actions .button,
+     .seokelo-wrap .tablenav.top .alignleft.actions select {
+        width: auto;
+        flex-grow: 1;
+     }
+     .seokelo-wrap .tablenav.top .alignleft.actions label {
+        width: 100%;
+     }
+
+
+    .seokelo-wrap .tablenav.bottom {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+    .seokelo-wrap .tablenav.bottom .seokelo-per-page-selector {
+        order: 1;
+        margin-bottom: 10px;
+        margin-right: 0;
+    }
+    .seokelo-wrap .tablenav.bottom .seokelo-pagination {
+        order: 2;
+        width: 100%;
+        text-align: left;
+        justify-content: flex-start;
+        gap: 3px;
+    }
+    .seokelo-wrap .tablenav.bottom .seokelo-pagination .displaying-num { display: none; }
+    .seokelo-wrap .tablenav.bottom .seokelo-pagination .displaying-pages { margin-right: 5px; }
+
+    .seokelo-controls-container { flex-direction: column; align-items: stretch; width: 100%; }
+    .seokelo-controls-container .button { width: 100%; text-align: center; }
+    .seokelo-controls-container form { width: 100%; }
+
+    /* Domain distribution responsive */
+    .seokelo-bar-item {
+        grid-template-columns: 1fr; /* Stack label, bar, and value */
+        text-align: center;
+        gap: 5px;
+    }
+    .seokelo-bar-label {
+        grid-row: 1;
+        text-align: left;
+    }
+    .seokelo-bar-value {
+        grid-row: 2;
+        text-align: left;
+    }
+    .seokelo-bar-bg {
+        grid-row: 3;
+    }
+}
